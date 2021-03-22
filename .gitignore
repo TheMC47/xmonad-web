@@ -1,3 +1,4 @@
 .stack-work/
-/app/stores/
-/app/tmp/
+_cache
+_site
+dist
