@@ -66,48 +66,26 @@ Available commands:
 ```
 
 ## Application Structures
-```
-xmonad-web
-├── app
-│   ├── html
-│   ├── stores
-│   └── tmp
-└── src
-    ├── announces
-    ├── assets
-    │   ├── css
-    │   ├── img
-    │   └── js
-    ├── changelogs
-    ├── documentations
-    ├── partials
-    └── templates
-```
 
-The `app` directory is a place for the Hakyll output.
-As you can see, `app/html` is a place for the generated HTML.
-Both `app/stores` nor `app/tmp` is a place for the Hakyll *caches*.
+All the `.md` files in the root (except for `README.md`) will
+be converted into `html` files. These go at the root of the
+website. The `css` directory has custom styles, as well as
+`bootstrap.min.css` for [Bootstrap](https://getbootstrap.com/).
+Image should go in the `images` directory.
 
-So, the main source files is located at the `src` directory.
+The videos that are linked in `videos.html` are hardcoded in
+the haskell source.
+
+The `_site` directory is a place for the Hakyll output.
+Hakyll *caches* the website in `_cache`.
+
+
+## Preview the Website
+You can use `xmonad-web watch` to preview the website and have
+it updated on each change. If you change the `src/xmonad-web.hs`
+file, you'd need to recompile `xmonad-web` again and restart it
+(you might need to clean the cache with `xmonad-web clean`).
 
 ## Generating the Website
 When you have done some changes, run `xmonad-web build` command.
-The HTML files will be generated and copied to the `app/html` directory.
-
-## Preview the Website
-You may use `xmonad-web server` command.
-But, it's better to use `xmonad-web watch` command.
-
-## Deploying the Website
-When you finished, please deploy the website.
-The generated website a.k.a `app/html` directory will be copied to the
-`gh-pages` branch. Use `xmonad-web deploy` command to do that.
-Are you curious what exactly `deploy` command do? Here is it:
-
-```
-cp -r app/html/ ../xmonad-html/ && git checkout gh-pages && cp -rf ../xmonad-html/* . && rm -r ../xmonad-html/ && git status
-```
-
-After running the `deploy` command, you will see the changes via
-`github status` command. Give a commit and then push them.
-Don't forget to switch back to your previous branch manually.
+The HTML files will be generated and copied to the `_site` directory.
