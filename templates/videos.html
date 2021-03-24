@@ -1,0 +1,11 @@
+<div class="row">
+    $for(videos)$
+    <div class="col-lg-6 p-2">
+        <h4>$vtitle$</h4>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/$id$" allowfullscreen></iframe>
+        </div>
+    </div>
+    $endfor$
+</div>
+<h4 class="py-4">Check more even <a href="https://www.youtube.com/results?search_query=xmonad">more</a> videos!</h4>

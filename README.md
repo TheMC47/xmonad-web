@@ -111,8 +111,3 @@ cp -r app/html/ ../xmonad-html/ && git checkout gh-pages && cp -rf ../xmonad-htm
 After running the `deploy` command, you will see the changes via
 `github status` command. Give a commit and then push them.
 Don't forget to switch back to your previous branch manually.
-
-## License
-Released under the MIT License.
-Created by [Wisnu Adi Nurcahyo](https://github.com/wisn/).
->>>>>>> rebuild-xmonad-web

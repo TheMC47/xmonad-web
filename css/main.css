@@ -11,6 +11,18 @@ background {
 #navbarText > ul > li > a:hover {
     color: black;
 }
+.quote {
+    color: gray;
+}
+.navbar {
+    padding-bottom: 20px;
+}
+#xmonadLogo {
+    display: block;
+    max-width: 35px;
+    width: auto;
+    height: auto;
+}
 .example-img {
     width: 70%;
 }
@@ -37,4 +49,12 @@ a:hover {
 h1,h2 {
     font-family: Raleway, Helvetica, Arial, sans-serif;
     font-weight: 500;
+}
+
+.list-col-4>ul {
+    column-count: 4;
+}
+
+.list-col-3>ul {
+    column-count: 3;
 }
