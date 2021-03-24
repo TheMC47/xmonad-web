@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            xmonad
+            
+            :
+            
+            About | The window manager that rocks
+        </title>
+        <meta name="description" content="the tiling window manager that rocks">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="mfont-weight-normal navbar-brand" href="#">
+                <img src="./images/xmonad-logo.png" class="logo" alt="xmonad logo" id="xmonadLogo">
+            </a>
+            <div class="mr-auto">
+                <h4>xmonad</h4>
+                <h5 class="quote">“That was easy. xmonad rocks!”</h5>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./documentation.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/xmonad/xmonad">
+                            <img src="./images/GitHub-Mark-32px.png" class="github-logo" alt="github logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+    <h1>About</h1>
+    <hr />
+    <p>Xmonad is a <em>tiling window manager</em> for X. Windows are arranged automatically to tile the screen without gaps or overlap, maximising screen use. All features of the window manager are accessible from the keyboard: a mouse is strictly optional. Xmonad is written and extensible in <a href="https://haskell.org">Haskell</a>. Custom layout algorithms, and other extensions, may be written by the user in config files. Layouts are applied dynamically, and different layouts may be used on each workspace. A guiding principle of the user interface is <em>predictability</em>: users should know in advance precisely the window arrangement that will result from any action, leading to an intuitive user interface.</p>
+<h4 id="features">Features</h4>
+<ul>
+<li>Very stable, fast, small and simple.</li>
+<li>Tiny code base (~1000 lines of Haskell)</li>
+<li>Automatic window tiling and management</li>
+<li>First class keyboard support: a mouse is unnecessary</li>
+<li>Full support for tiling windows on multi-head displays</li>
+<li>Full support for floating, tabbing and decorated windows</li>
+<li>Full support for <a href="https://haskell.org/haskellwiki/Xmonad/Using_xmonad_in_Gnome">GNOME</a> and <a href="https://haskell.org/haskellwiki/Xmonad/Using_xmonad_in_KDE">KDE</a> utilities</li>
+<li>XRandR support to rotate, add or remove monitors</li>
+<li>Per-workspace layout algorithms</li>
+<li>Per-screens custom status bars</li>
+<li>Compositing support</li>
+<li>Powerful, stable customisation and on-the-fly reconfiguration</li>
+<li>Large <a href="https://hackage.haskell.org/package/xmonad-contrib">extension library</a></li>
+<li>Excellent, extensive <a href="https://hackage.haskell.org/package/xmonad">documentation</a></li>
+<li>Large, active development team, support and community</li>
+<li>Watch some <a href="videos.html">videos of xmonad</a> and follow us on <a href="https://twitter.com/xmonad">twitter</a></li>
+</ul>
+<h4 id="tiling-the-screen">Tiling the screen</h4>
+<p>Xmonad provides three tiling algorithms by default: <em>tall</em>, <em>wide</em> and <em>fullscreen</em>. In tall or wide mode, all windows are visible and tiled to fill the plane without gaps. In fullscreen mode only the focused window is visible, filling the screen. Alternative tiling algorithms (and much more) are provided as <a href="https://hackage.haskell.org/package/xmonad-contrib">extensions</a>. Sets of windows are grouped together on virtual <em>workspaces</em> and each workspace retains its own layout. Multiple physical monitors are supported via Xinerama, allowing simultaneous display of several workspaces.</p>
+<h4 id="simple-and-flexible">Simple and Flexible</h4>
+<p>Adhering to a minimalist philosophy of doing one job, and doing it well, the entire code base remains tiny, and is written to be simple to understand and modify. By using Haskell as a configuration language arbitrarily complex extensions may be implemented by the user using a powerful `scripting’ language, without needing to modify the window manager directly. For example, users <a href="https://hackage.haskell.org/package/xmonad-contrib">may write</a> their own tiling algorithms, in Haskell, in their config files.</p>
+<h4 id="policies-and-high-assurance">Policies and High Assurance</h4>
+<p>From the outset correctness and robustness have been a goal of the project. Using a combination of static and dynamic techniques, a wide range of errors are prevented and checkable, leading to better, cleaner code, and a more stable application. In particular, the expressive Haskell type system is used to prevent certain classes of bugs, while type-based automatic testing and <a href="https://webspace.science.uu.nl/~swier004/publications/2012-haskell.pdf">verification tools</a>, are used to ensure the user interface <a href="https://code.haskell.org/xmonad/tests/Properties.hs">policies</a> are correct (for example, that a layout algorithm never produces gaps or overlapping windows, or that window manager actions never produce an inconsistent internal state).</p>
+</div>
+
+    </body>
+</html>

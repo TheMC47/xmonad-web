@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            xmonad
+            
+            :
+            
+            Documentation | The window manager that rocks
+        </title>
+        <meta name="description" content="the tiling window manager that rocks">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="mfont-weight-normal navbar-brand" href="#">
+                <img src="./images/xmonad-logo.png" class="logo" alt="xmonad logo" id="xmonadLogo">
+            </a>
+            <div class="mr-auto">
+                <h4>xmonad</h4>
+                <h5 class="quote">“That was easy. xmonad rocks!”</h5>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./documentation.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./community.html">Community</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/xmonad/xmonad">
+                            <img src="./images/GitHub-Mark-32px.png" class="github-logo" alt="github logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+    <h1>Documentation</h1>
+    <hr />
+    <div class="row">
+<div class="col-lg">
+<h2 id="the-essentials">The essentials</h2>
+<ul>
+<li><a href="http://haskell.org/haskellwiki/Xmonad/Frequently_asked_questions">the FAQ</a></li>
+<li><a href="http://haskell.org/haskellwiki/Xmonad">the wiki</a></li>
+<li>the documentation:
+<ul>
+<li><a href="http://hackage.haskell.org/package/xmonad">xmonad</a></li>
+<li><a href="http://hackage.haskell.org/package/xmonad-contrib">xmonad-contrib</a></li>
+</ul></li>
+</ul>
+<h2 id="getting-started">Getting started</h2>
+<p><a href="about.html">about</a> – an overview of xmonad features<br />
+<a href="tour.html">guided tour</a> – a walkthrough of the basic functionality<br />
+<a href="http://haskell.org/haskellwiki/Xmonad/Config_archive/John_Goerzen's_Configuration">step-by-step</a> – guide to configuring xmonad<br />
+<a href="http://haskell.org/haskellwiki/Image:Xmbindings.png">cheatsheet</a> – an overview of the keybindings</p>
+<h2 id="reference">Reference</h2>
+<p><a href="manpage.html">manpage</a> – a reference of the default keybindings<br />
+<a href="http://hackage.haskell.org/package/xmonad-contrib/docs/XMonad-Doc-Configuring.html">configuring</a> – how to write a config file<br />
+<a href="http://haskell.org/haskellwiki/Xmonad/Config_archive/Template_xmonad.hs">template xmonad.hs</a> – a complete config file that replicates the defaults<br />
+<a href="http://hackage.haskell.org/package/xmonad">xmonad api docs</a> – reference documentation for xmonad’s core API</p>
+<h2 id="extensions">Extensions</h2>
+<p><a href="http://hackage.haskell.org/package/xmonad-contrib/docs/XMonad-Doc-Extending.html">extending</a> – a roundup of many (but not all) of the modules in the <em>contrib</em> package<br />
+<a href="http://haskell.org/haskellwiki/Xmonad/Config_archive">config archive</a> – users’ contributed config files, showing off many of the extensions<br />
+<a href="http://hackage.haskell.org/package/xmonad-contrib">xmonad-contrib api docs</a> – reference documentation for all of xmonad’s contrib modules<br />
+<a href="http://haskell.org/haskellwiki/Xmonad/xmonad_development_tutorial">development tutorial</a> – learn to write your own extension</p>
+<h2 id="in-your-environment">In your environment</h2>
+<p><a href="intro.html">Installing from tarball</a> - <a href="http://haskell.org/haskellwiki/Xmonad/Using_xmonad_in_Gnome">Gnome</a> - <a href="http://haskell.org/haskellwiki/Xmonad/Using_xmonad_in_KDE">KDE</a> - <a href="http://haskell.org/haskellwiki/Xmonad/Using_xmonad_in_XFCE">XFCE</a> - <a href="http://wiki.archlinux.org/index.php/XMonad">Arch Linux</a> - <a href="http://haskell.org/haskellwiki/Xmonad/Using_xmonad_on_Apple_OSX">OS X</a> - <a href="http://haskell.org/haskellwiki/Xmonad/Using_xmonad_on_OLPC_XO">OLPC</a></p>
+</div>
+<section id="quick-start-for-the-impatient" class="col-lg">
+<h1>Quick start for the impatient</h1>
+<ol type="1">
+<li><a href="download.html">Install</a> the xmonad binary and config library.</li>
+<li>Wire xmonad up to your <a href="http://www.haskell.org/haskellwiki/Xmonad/Frequently_asked_questions#How_can_I_use_xmonad_with_a_display_manager.3F_.28xdm.2C_kdm.2C_gdm.29">login manager</a>.</li>
+<li>Logout and back in. You’re in xmonad.</li>
+<li>alt-shift-enter to open an xterm.</li>
+<li>Write a ~/.xmonad/xmonad.hs to <a href="http://haskell.org/haskellwiki/Xmonad/Config_archive/John_Goerzen's_Configuration">configure</a> xmonad.</li>
+<li>mod-q to reload your config file.</li>
+<li><a href="download.html">Install</a> the xmonad-contrib config library.</li>
+<li>Edit your xmonad.hs to include this new <a href="http://haskell.org/haskellwiki/Xmonad/Config_archive">fantasticness</a>.</li>
+<li>mod-q to reload your config file.</li>
+</ol>
+</section>
+</div>
+</div>
+
+    </body>
+</html>
